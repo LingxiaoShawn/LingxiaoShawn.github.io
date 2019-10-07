@@ -19,7 +19,7 @@ last_updated: # leave blank if you don't want to display last updated
 # -----------------------------------------------------------------------------
 github_username: LingxiaoShawn # your GitHub user name
 twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
+linkedin_username: lingxiaozhao # your LinkedIn user name
 scholar_userid: # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
@@ -90,8 +90,8 @@ plugins:
 
 # Jekyll-Scholar
 scholar:
-
-  last_name: Einstein
+  first_name: Lingxiao
+  last_name: Zhao
 
   style: apa
   locale: en
