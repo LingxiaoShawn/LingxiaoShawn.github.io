@@ -17,14 +17,16 @@
     <span class="author">
       {% for author in entry.author_array %}
         {% if forloop.length == 1 %}
-          {% if author.last == site.scholar.last_name %}
+          {% if author.first == site.scholar.first_name 
+               and  author.last | remove: "*"  == site.scholar.last_name %}
             <em>{{author.first}} {{author.last}}</em>
           {% else %}
             {{author.first}} {{author.last}}
           {% endif %}
         {% else %}
           {% unless forloop.last %}
-            {% if author.last == site.scholar.last_name %}
+            {% if author.first == site.scholar.first_name 
+               and  author.last | remove: "*"  == site.scholar.last_name %}
               <em>{{author.first}} {{author.last}}</em>,
             {% else %}
               {% if site.data.coauthors[author.last] %}
@@ -34,7 +36,8 @@
               {% endif %}
             {% endif %}
           {% else %}
-            {% if author.last == site.scholar.last_name %}
+            {% if author.first == site.scholar.first_name 
+               and  author.last | remove: "*" == site.scholar.last_name %}
               and <em>{{author.first}} {{author.last}}</em>
             {% else %}
               {% if site.data.coauthors[author.last] %}
@@ -72,6 +75,9 @@
   {% endif %}
   {% if entry.pdf %}
     [<a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
+  {% endif %}
+  {% if entry.extpdf %}
+    [<a href="{{ entry.extpdf }}" target="_blank">PDF</a>]
   {% endif %}
   {% if entry.supp %}
     [<a href="{{ entry.supp | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Supp</a>]

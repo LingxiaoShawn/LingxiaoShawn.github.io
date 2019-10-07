@@ -3,16 +3,41 @@
 
 @article{zhao2019pairnorm,
   title={PairNorm: Tackling Oversmoothing in GNNs},
-  author={Zhao, Lingxiao and Akoglu, Leman},
+  author={Zhao, Lingxiao and Zhao, Yue and Akoglu, Leman},
   journal={arXiv preprint arXiv:1909.12223},
-  year={2019}
+  year={2019},
+  abstract={The performance of graph neural nets (GNNs) is known to gradually decrease
+            with increasing number of layers. This decay is partly attributed to oversmoothing, where repeated graph convolutions eventually make node embeddings indistinguishable. We take a closer look at two different interpretations, aiming to
+            quantify oversmoothing. Our main contribution is PAIRNORM, a novel normalization layer that is based on a careful analysis of the graph convolution operator,
+            which prevents all node embeddings from becoming too similar. What is more,
+            PAIRNORM is fast, easy to implement without any change to network architecture
+            nor any additional parameters, and is broadly applicable to any GNN. Experiments
+            on real-world graphs demonstrate that PAIRNORM makes deeper GCN, GAT, and
+            SGC models more robust against oversmoothing, and significantly boosts performance for a new problem setting that benefits from deeper GNNs.},
+  extpdf={https://arxiv.org/pdf/1909.12223.pdf}
 }
 
 @inproceedings{wu2018quest,
   title={A Quest for Structure: Jointly Learning the Graph Structure and Semi-Supervised Classification},
-  author={Wu, Xuan* and Zhao, Lingxiao* and Akoglu, Leman},
+  author={Wu*, Xuan and Zhao*, Lingxiao and Akoglu, Leman},
   booktitle={Proceedings of the 27th ACM International Conference on Information and Knowledge Management},
   pages={87--96},
   year={2018},
-  organization={ACM}
+  organization={ACM},
+  abstract={How should one construct a graph from the input point-cloud
+            data for graph-based SSL? In this work we introduce a new, parallel graph learning framework (called PG-learn) for the graph
+            construction step of SSL. Our solution has two main ingredients:
+            (1) a gradient-based optimization of the edge weights (more specifically, different kernel bandwidths in each dimension) based on a
+            validation loss function, and (2) a parallel hyperparameter search algorithm with an adaptive resource allocation scheme. In essence, (1)
+            allows us to search around a (random) initial hyperparameter configuration for a better one with lower validation loss. Since the search
+            space of hyperparameters is huge for high-dimensional problems,
+            (2) empowers our gradient-based search to go through as many
+            different initial configurations as possible, where runs for relatively
+            unpromising starting configurations are terminated early to allocate the time for others. As such, PG-learn is a carefully-designed
+            hybrid of random and adaptive search. Through experiments on
+            multi-class classification problems, we show that PG-learn significantly outperforms a variety of existing graph construction
+            schemes in accuracy (per fixed time budget for hyperparameter
+            tuning), and scales more effectively to high dimensional problems.},
+  extpdf={https://arxiv.org/pdf/1909.12385.pdf},
+  code={https://github.com/LingxiaoShawn/PG-Learn}
 }

@@ -25,8 +25,7 @@ orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note: >  
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
