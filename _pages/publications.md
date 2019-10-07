@@ -1,6 +1,6 @@
 ---
 layout: page
-title: publications
+title: Publications
 permalink: /publications/
 description: star(*) denotes equal contribution
 years: [2019, 2018]
