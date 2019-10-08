@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: MISC.
+title: Misc.
 description: 
 ---
 
@@ -24,3 +24,6 @@ description:
 * 15-780: Artificial Intelligence
 * 15-659: Probability and Computing
 * 15-650: Algorithm and Data Structure
+
+## Sports
+I enjoy running and table tennis!
