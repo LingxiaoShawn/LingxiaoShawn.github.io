@@ -10,8 +10,8 @@ description:
 * 90-812: Introduction To Programming with Python
 
 ## Course projects (Selected)
-* 10-708: Approximat Inference with Graph Neural Networks  
-[report](../assets/pdf/10708_Report.pdf) [poster](../assets/pdf/10708_Poster.pdf)
+* 10-708: Approximat Inference with Graph Neural Networks 
+[[report]](../assets/pdf/10708_Report.pdf) [[poster]](../assets/pdf/10708_Poster.pdf)
 
 ## Courses
 * 10-701: [Introduction To Machine Learning]()
