@@ -7,14 +7,14 @@ description:
 
 ## Teaching Assistant 
 * 10-725: [Convex Optimization](https://www.stat.cmu.edu/~ryantibs/convexopt/) by [Ryan Tibshirani](http://www.stat.cmu.edu/~ryantibs/) 
-* 90-812: Introduction To Programming with Python
+* 90-812: Introduction to Programming with Python
 
 ## Course projects (Selected)
-* 10-708: Approximat Inference with Graph Neural Networks 
+* 10-708: Approximate Inference with Graph Neural Networks 
 [[report]](../assets/pdf/10708_Report.pdf) [[poster]](../assets/pdf/10708_Poster.pdf)
 
 ## Courses
-* 10-701: [Introduction To Machine Learning]()
+* 10-701: Introduction to Machine Learning
 * 10-715: [Advanced Intro to Machine Leanring](http://www.cs.cmu.edu/~nihars/teaching/10715-Fa19/index.html)
 * 10-716: [Advanced Machine Learning](http://www.cs.cmu.edu/~pradeepr/716/) 
 * 10-725: Convex Optimization 
