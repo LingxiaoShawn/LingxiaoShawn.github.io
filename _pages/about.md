@@ -15,7 +15,7 @@ I'm a 2nd-year Ph.D. student of information systems and machine learning in [Hei
 
 I finished my Master's in [ECE](https://www.ece.cmu.edu/) department at Carnegie Mellon Univrsity, and Bachelor's (while I was in power system area) in EE department at Xi'an Jiaotong University. 
 
-I have a twin brother [Lingfei Zhao](https://phy.duke.edu/people/lingfei-zhao) pursuing his Ph.D. of Physics at Duke University. We enjoy games togethor :). 
+I have a twin brother [Lingfei Zhao](https://phy.duke.edu/people/lingfei-zhao) pursuing his Ph.D. of Physics at Duke University. We enjoy games together :). 
 
 Email: my first name at cmu.edu
 
