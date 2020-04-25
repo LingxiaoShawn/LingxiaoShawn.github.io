@@ -3,7 +3,7 @@ layout: page
 title: Publications
 permalink: /publications/
 description: star(*) denotes equal contribution
-years: [2019, 2018]
+years: [2020, 2018]
 ---
 
 {% for y in page.years %}
