@@ -16,7 +16,8 @@
             SGC models more robust against oversmoothing, and significantly boosts performance for a new problem setting that benefits from deeper GNNs.},
   extpdf={https://openreview.net/pdf?id=rkecl1rtwB},
   code={https://github.com/LingxiaoShawn/PairNorm},
-  slides={20-ICLR-PairNorm.pdf}
+  slides={20-ICLR-PairNorm.pdf},
+  video={https://iclr.cc/virtual_2020/poster_rkecl1rtwB.html}
 }
 
 @inproceedings{wu2018quest,
@@ -44,3 +45,39 @@
   code={https://github.com/LingxiaoShawn/PG-Learn},
   slides={18-cikm-graph_SSL.pdf}
 }
+
+
+
+@article{zhao2020gpca,
+  title={Connecting Graph Convolutional Network and Graph-Regularized PCA},
+  author={Zhao, Lingxiao and Akoglu, Leman},
+  booktitle={ICML 2020 GRL+ Workshop},
+  year={2020},
+  abstract={Graph convolution operator of the GCN model is originally motivated from a localized first-order approximation of spectral graph convolutions.This work stands on a different view; establishing a connection between graph convolution and graph-regularized PCA. Based on this connection, GCN architecture, shaped by stacking graph convolution layers, shares a close relationship with stacking graph-regularized PCA (GPCA). We empirically demonstrate that the unsupervised embeddings by GPCA paired with a logistic regression classifier achieves similar performance to GCN on semi-supervised node classification tasks. Further, we capitalize on the discovered relationship to design an effective initialization strategy for GCN based on stacking GPCA.},
+  extpdf={https://arxiv.org/pdf/2006.12294.pdf},
+  code={https://github.com/LingxiaoShawn/PairNorm}
+}
+
+@article{zhu2020homophily,
+  title={Generalizing Graph Neural Networks Beyond Homophily},
+  author={Zhu, Jiong and Yan, Yujun and Zhao, Lingxiao and Heimann, Mark and Akoglu, Leman and   Koutra, Danai},
+  journal={arXiv preprint arXiv:2006.11468},
+  year={2020},
+  abstract={Graph convolution operator of the GCN model is originally motivated from a localized first-order approximation of spectral graph convolutions.This work stands on a different view; establishing a connection between graph convolution and graph-regularized PCA. Based on this connection, GCN architecture, shaped by stacking graph convolution layers, shares a close relationship with stacking graph-regularized PCA (GPCA). We empirically demonstrate that the unsupervised embeddings by GPCA paired with a logistic regression classifier achieves similar performance to GCN on semi-supervised node classification tasks. Further, we capitalize on the discovered relationship to design an effective initialization strategy for GCN based on stacking GPCA.},
+  extpdf={https://arxiv.org/pdf/2006.12294.pdf},
+  code={https://github.com/LingxiaoShawn/PairNorm}
+}
+
+@article{chen2020graph,
+  title={Graph Unrolling Networks: Interpretable Neural Networks for Graph Signal Denoising},
+  author={Chen, Siheng and Eldar, Yonina C and Zhao, Lingxiao},
+  journal={arXiv preprint arXiv:2006.01301},
+  year={2020},
+  extpdf={https://arxiv.org/pdf/2006.01301.pdf},
+  abstract={We propose an interpretable graph neural network framework to denoise single or multiple noisy graph signals. The proposed graph unrolling networks expand algorithm unrolling to the graph domain and provide an interpretation of the architecture design from a signal processing perspective. We unroll an iterative denoising algorithm by mapping each iteration into a single network layer where the feed-forward process is equivalent to iteratively denoising graph signals. We train the graph unrolling networks through unsupervised learning, where the input noisy graph signals are used to supervise the networks. By leveraging the learning ability of neural networks, we adaptively capture appropriate priors from input noisy graph signals, instead of manually choosing signal priors. A core component of graph unrolling networks is the edge-weight-sharing graph convolution operation, which parameterizes each edge weight by a trainable kernel function where the trainable parameters are shared by all the edges. The proposed convolution is permutation-equivariant and can flexibly adjust the edge weights to various graph signals. We then consider two special cases of this class of networks, graph unrolling sparse coding (GUSC) and graph unrolling trend filtering (GUTF), by unrolling sparse coding and trend filtering, respectively. To validate the proposed methods, we conduct extensive experiments on both real-world datasets and simulated datasets, and demonstrate that our methods have smaller denoising errors than conventional denoising algorithms and state-of-the-art graph neural networks. For denoising a single smooth graph signal, the normalized mean square error of the proposed networks is around 40% and 60% lower than that of graph Laplacian denoising and graph wavelets, respectively.}
+}
+
+
+
+
+
