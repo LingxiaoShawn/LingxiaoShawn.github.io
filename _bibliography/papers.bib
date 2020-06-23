@@ -63,9 +63,8 @@
   author={Zhu, Jiong and Yan, Yujun and Zhao, Lingxiao and Heimann, Mark and Akoglu, Leman and   Koutra, Danai},
   journal={arXiv preprint arXiv:2006.11468},
   year={2020},
-  abstract={Graph convolution operator of the GCN model is originally motivated from a localized first-order approximation of spectral graph convolutions.This work stands on a different view; establishing a connection between graph convolution and graph-regularized PCA. Based on this connection, GCN architecture, shaped by stacking graph convolution layers, shares a close relationship with stacking graph-regularized PCA (GPCA). We empirically demonstrate that the unsupervised embeddings by GPCA paired with a logistic regression classifier achieves similar performance to GCN on semi-supervised node classification tasks. Further, we capitalize on the discovered relationship to design an effective initialization strategy for GCN based on stacking GPCA.},
-  extpdf={https://arxiv.org/pdf/2006.12294.pdf},
-  code={https://github.com/LingxiaoShawn/PairNorm}
+  abstract={We investigate the representation power of graph neural networks in the semi-supervised node classification task under heterophily or low homophily, i.e., in networks where connected nodes may have different class labels and dissimilar features. Most existing GNNs fail to generalize to this setting, and are even outperformed by models that ignore the graph structure (e.g., multilayer perceptrons). Motivated by this limitation, we identify a set of key designs -- ego- and neighbor-embedding separation, higher-order neighborhoods, and combination of intermediate representations -- that boost learning from the graph structure under heterophily, and combine them into a new graph convolutional neural network, H2GCN. Going beyond the traditional benchmarks with strong homophily, our empirical analysis on synthetic and real networks shows that, thanks to the identified designs, H2GCN has consistently strong performance across the full spectrum of low-to-high homophily, unlike competitive prior models without them.},
+  extpdf={https://arxiv.org/abs/2006.11468.pdf}
 }
 
 @article{chen2020graph,
