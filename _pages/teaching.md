@@ -27,6 +27,8 @@ description:
 * 15-780: Artificial Intelligence
 * 15-659: Probability and Computing
 * 15-650: Algorithm and Data Structure
+* 36-731 & 36-732: Causal Inference
+* 36-707: Regression Analysis
 
 ## Sports
 I enjoy running and table tennis!

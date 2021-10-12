@@ -1,22 +1,107 @@
 ---
 ---
 
+
+@article{zhao2021GNNAsKernel,
+  title={From Stars to Subgraphs: Uplifting Any GNN with Local Structure Awareness},
+  author={Zhao, Lingxiao and Jin, Wei and Akoglu, Leman and Shah, Neil},
+  journal={Under review ICLR 2022},
+  year={2021},
+  abstract={Message Passing Neural Networks (MPNNs) are a common type of Graph Neural
+            Network (GNN), in which each node’s representation is computed recursively by
+            aggregating representations (“messages”) from its immediate neighbors akin to a
+            star-shaped pattern. MPNNs are appealing for being efficient and scalable, 
+            however their expressiveness is upper-bounded by the 1st-order Weisfeiler-Lehman
+            isomorphism test (1-WL). In response, prior works propose highly expressive
+            models at the cost of scalability and sometimes generalization performance. Our
+            work stands between these two regimes: we introduce a general framework to
+            uplift any MPNN to be more expressive, with limited scalability overhead and
+            greatly improved practical performance. We achieve this by extending local aggregation in 
+            MPNNs from star patterns to general subgraph patterns (e.g., k-egonets):
+            in our framework, each node representation is computed as the encoding of a surrounding induced subgraph 
+            rather than encoding of immediate neighbors only (i.e.
+            a star). We choose the subgraph encoder to be a GNN (mainly MPNNs, considering scalability) to 
+            design a general framework that serves as a wrapper to uplift any GNN. We call our proposed method GNN-AK (GNN As Kernel), as the
+            framework resembles a convolutional neural network by replacing the kernel with
+            GNNs. Theoretically, we show that our framework is strictly more powerful than
+            1&2-WL, and is not less powerful than 3-WL. We also design subgraph sampling
+            strategies which greatly reduce memory footprint and improve speed while maintaining performance. 
+            Our method sets new state-of-the-art performance by large
+            margins for several well-known graph ML tasks; specifically, 0.08 MAE on ZINC,
+            74.79% and 86.887% accuracy on CIFAR10 and PATTERN respectively.},
+  extpdf={https://arxiv.org/pdf/2110.03753.pdf},
+  code={https://github.com/GNNAsKernel/GNNAsKernel}
+}
+
+@article{Sawlani2021DOS,
+  title={Fast Attributed Graph Embedding via Density of States},
+  author={Sawlani, Saurabh and Zhao, Lingxiao and Akoglu, Leman},
+  journal={IEEE ICDM 2021},
+  year={2021},
+  abstract={Given a node-attributed graph, how can we efficiently represent it with few numerical features that expressively
+            reflect its topology and attribute information? We propose A-DOGE, for Attributed DOS-based Graph Embedding, based on
+            density of states (DOS, a.k.a. spectral density) to tackle this
+            problem. A-DOGE is designed to fulfill a long desiderata of
+            desirable characteristics. Most notably, it capitalizes on efficient
+            approximation algorithms for DOS, that we extend to blend in
+            node labels and attributes for the first time, making it fast and
+            scalable for large attributed graphs and graph databases. Being
+            based on the entire eigenspectrum of a graph, A-DOGE can
+            capture structural and attribute properties at multiple (“glocal”)
+            scales. Moreover, it is unsupervised (i.e. agnostic to any specific
+            objective) and lends itself to various interpretations, which makes
+            it is suitable for exploratory graph mining tasks. Finally, it pro-
+            cesses each graph independent of others, making it amenable for
+            streaming settings as well as parallelization. Through extensive
+            experiments, we show the efficacy and efficiency of A-DOGE on
+            exploratory graph analysis and graph classification tasks, where
+            it significantly outperforms unsupervised baselines and achieves
+            competitive performance with modern supervised GNNs, while
+            achieving the best trade-off between accuracy and runtime.},
+  extpdf={},
+}
+
+
 @article{zhao2021gpca,
   title={Connecting Graph Convolutional Network and Graph-Regularized PCA (Extended)},
   author={Zhao, Lingxiao and Akoglu, Leman},
-  journal={Under review at ICML 2021},
+  journal={Under review},
   year={2021},
-  abstract={Graph convolution operator of the GCN model is originally motivated from a localized ﬁrst-order approximation of spectral graph convolutions. This work stands on a different view; establishing a mathematical connection between graph convolution and graph-regularized PCA (GPCA). Based on this connection, GCN architecture, shaped by stacking graph convolution layers, shares a close relationship with stacking GPCA. We empirically demonstrate that the unsupervised embeddings by GPCA paired with a 1- or 2-layer MLP achieves similar or even better performance than GCN on semi-supervised node classiﬁcation tasks across ﬁve datasets including Open Graph Benchmark 1. This suggests that the prowess of GCN is driven by graph based regularization. In addition, we extend GPCA to the (semi-)supervised setting and show that it is equivalent to GPCA on a graph extended with “ghost” edges between nodes of the same label. Finally, we capitalize on the discovered relationship to design an effective initialization strategy based on stacking GPCA, enabling GCN to converge faster and achieve robust performance at large number of layers. Notably, the proposed initialization is general-purpose and applies to other GNNs.},
-  pdf={21-GPCA.pdf}
+  abstract={Graph convolution operator of the GCN model is originally motivated from a localized ﬁrst-order approximation of spectral graph convolutions. 
+            This work stands on a different view; establishing a mathematical connection between graph convolution and graph-regularized PCA (GPCA). 
+            Based on this connection, GCN architecture, shaped by stacking graph convolution layers, shares a close relationship with stacking GPCA. 
+            We empirically demonstrate that the unsupervised embeddings by GPCA paired with a 1- or 2-layer MLP achieves similar or even better performance 
+            than GCN on semi-supervised node classiﬁcation tasks across ﬁve datasets including Open Graph Benchmark 1. 
+            This suggests that the prowess of GCN is driven by graph based regularization. 
+            In addition, we extend GPCA to the (semi-)supervised setting and show that it is equivalent to GPCA on a graph extended with “ghost” edges 
+            between nodes of the same label. Finally, we capitalize on the discovered relationship to design an effective initialization strategy based on stacking GPCA, 
+            enabling GCN to converge faster and achieve robust performance at large number of layers. Notably, the proposed initialization is general-purpose and applies to other GNNs.},
+  extpdf={https://arxiv.org/pdf/2006.12294.pdf},
+  code={https://github.com/LingxiaoShawn/GPCANet}
 }
 
 @article{zhao2021issue,
-  title={Issues with Propagation Based Models for Graph-Level Outlier Detection},
+  title={On Using Classification Datasets to Evaluate Graph Outlier Detection: Peculiar Observations and New Insights},
   author={Zhao, Lingxiao and Akoglu, Leman},
-  journal={Under review at ICML 2021},
+  journal={Big Data Journal, Special Issue on Evaluation and Experimental Design in Data Mining and Machine Learning, Aug. 2021},
   year={2021},
-  abstract={Graph-Level Outlier Detection (GLOD) is the task of identifying unusual graphs within a graph database, which received little attention compared to node-level detection in a single graph. As propagation based graph embedding by GNNs and graph kernels achieved promising results on another graph-level task, i.e. graph classiﬁcation, we study applying those models to tackle GLOD. Instead of developing new models, this paper identiﬁes and delves into a fundamental and intriguing issue with applying propagation based models to GLOD, with evaluation conducted on repurposed binary graph classiﬁcation datasets where one class is down-sampled as outlier. We ﬁnd that ROC-AUC performance of the models changes signiﬁcantly (“ﬂips” from high to low) depending on which class is down-sampled. Interestingly, ROC-AUCs on these two variants approximately sum to 1 and their performance gap is ampliﬁed with increasing propagations. We carefully study the graph embedding space produced by propagation based models and ﬁnd two driving factors: (1) disparity between within-class densities which is ampliﬁed by propagation, and (2) overlapping support (mixing of embeddings) across classes. Our study sheds light onto the effects of using graph propagation based models and classiﬁcation datasets for outlier detection for the ﬁrst time.},
-  pdf={21-PerformanceFlip.pdf}
+  abstract={It is common practice of the outlier mining community to repurpose classification datasets toward evaluating
+            various detection models. To that end, often a binary classification dataset is used, where samples from
+            one of the classes is designated as the ‘inlier’ samples, and the other class is substantially down-sampled
+            to create the (ground-truth) ‘outlier’ samples. Graph-level outlier detection (GLOD) is rarely studied but
+            has many potentially influential real-world applications. In this study, we identify an intriguing issue with
+            repurposing graph classification datasets for GLOD. We find that ROC-AUC performance of the models
+            changes significantly (“flips” from high to very low, even worse than random) depending on which class is
+            down-sampled. Interestingly, ROC-AUCs on these two variants approximately sum to 1 and their performance
+            gap is amplified with increasing propagations for a certain family of propagation based outlier detection
+            models. We carefully study the graph embedding space produced by propagation based models and find
+            two driving factors: (1) disparity between within-class densities which is amplified by propagation, and (2)
+            overlapping support (mixing of embeddings) across classes. We also study other graph embedding methods and
+            downstream outlier detectors, and find that the intriguing “performance flip” issue still widely exists but which
+            version of the downsample achieves higher performance may vary. Thoughtful analysis over comprehensive
+            results further deeper our understanding of the established issue.},
+  extpdf={https://arxiv.org/pdf/2012.12931.pdf},
+  code={https://github.com/LingxiaoShawn/GLOD-Issues}
 }
 
 @article{zhao2019pairnorm,
