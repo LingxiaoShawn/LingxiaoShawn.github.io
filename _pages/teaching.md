@@ -5,6 +5,10 @@ title: Misc.
 description: 
 ---
 
+## Working Experience 
+* Research Intern at Snap Inc., advised by [Neil Shah](http://nshah.net/), May 2021 - Aug 2021.
+* Research Intern at IBM, advised by [Charu Aggarwal](http://www.charuaggarwal.net/), May 2020 - Aug 2020.
+
 ## Teaching Assistant 
 * 10-725: [Convex Optimization](https://www.stat.cmu.edu/~ryantibs/convexopt/) by [Ryan Tibshirani](http://www.stat.cmu.edu/~ryantibs/) 
 * 90-812: Introduction to Programming with Python
