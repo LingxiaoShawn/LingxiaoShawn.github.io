@@ -1,6 +1,45 @@
 ---
 ---
 
+
+
+
+@article{zhao2022KSetGNN,
+  title={A Practical, Progressively-Expressive GNN},
+  author={Zhao, Lingxiao and Shah, Neil and Akoglu, Leman},
+  journal={NeurIPS},
+  year={2022},
+  abstract={Message passing neural networks (MPNNs) have become a dominant flavor of graph neural networks (GNNs) in recent years. Yet, MPNNs come with notable limitations; namely, they are at most as powerful as the 1-dimensional Weisfeiler-Leman (1-WL) test in distinguishing graphs in a graph isomorphism testing frame-work. To this end, researchers have drawn inspiration from the k-WL hierarchy to develop more expressive GNNs. However, current k-WL-equivalent GNNs are not practical for even small values of k, as k-WL becomes combinatorially more complex as k grows. At the same time, several works have found great empirical success in graph learning tasks without highly expressive models, implying that chasing expressiveness with a “coarse-grained ruler” of expressivity like k-WL is often unneeded in practical tasks. To truly understand the expressiveness-complexity tradeoff, one desires a more “fine-grained ruler,” which can more gradually increase expressiveness. Our work puts forth such a proposal: Namely, we first propose the (k, c)(≤)-SETWL hierarchy with greatly reduced complexity from k-WL, achieved by moving from k-tuples of nodes to sets with ≤k nodes defined over ≤c connected components in the induced original graph. We show favorable theoretical results for this model in relation to k-WL, and concretize it via (k, c)(≤)-SETGNN, which is as expressive as (k, c)(≤)-SETWL. Our model is practical and progressively-expressive, increasing in power with k and c. We demonstrate effectiveness on several benchmark datasets, achieving several state-of-the-art results with runtime and memory usage applicable to practical graphs.},
+}
+
+
+@article{ding2022HyperEnsemble,
+  title={A Practical, Progressively-Expressive GNN},
+  author={Ding, Xueying and Zhao, Lingxiao and Akoglu, Leman},
+  journal={NeurIPS},
+  year={2022},
+  abstract={Outlier detection (OD) literature exhibits numerous algorithms as it applies to diverse domains. However, given a new detection task, it is unclear how to choose an algorithm to use, nor how to set its hyperparameter(s) (HPs) in unsupervised settings. HP tuning is an ever-growing problem with the arrival of many new detectors based on deep learning. While they have appealing properties such as task- driven representation learning and end-to-end optimization, deep models come with a long list of HPs. Surprisingly, the issue of model selection in the outlier mining literature has been "the elephant in the room"; a significant factor in unlocking the utmost potential of deep methods, yet little said or done to systematically tackle the issue. In the first part of this paper, we conduct the first large-scale analysis on the HP sensitivity of deep OD methods, and through more than 35,000 trained models, quantitatively demonstrate that model selection is inevitable. Next, we design a HP-robust and scalable deep hyper-ensemble model called ROBOD that assembles models with varying HP configurations, bypassing the choice paralysis. Importantly, we introduce novel strategies to speed up ensemble training, such as parameter sharing, batch/simultaneous training, and data subsampling, that allow us to train fewer models with fewer parameters. Extensive experiments on both image and tabular datasets show that ROBOD achieves and retains robust, state-of-the-art detection performance as compared to its modern counterparts, while taking only 2-10% of the time by the naive hyper-ensemble with independent training.},
+  extpdf={https://arxiv.org/pdf/2206.07647.pdf},
+}
+
+
+
+@article{2022GLAM,
+  title={Graph-level Anomaly Detection with Unsupervised GNNs},
+  author={Zhao, Lingxiao and Sawlani, Saurabh and Srinivasan, Arvind and Akoglu, Leman},
+  journal={ICDM (Short Paper)},
+  year={2022},
+  abstract={Graph-based anomaly detection ﬁnds numerous applications in the real-world. Thus, there exists extensive literature on the topic that has recently shifted toward deep detection models due to advances in deep learning and graph neural networks (GNNs). A vast majority of prior work focuses on detecting node/edge/subgraph anomalies within a single graph, with much less work on graph-level anomaly detection in a graph database. This work aims to ﬁll two gaps in the literature: We (1) design GLAM, an end-to-end graph-level anomaly detection model based on GNNs, and (2) focus on unsupervised model selection, which is notoriously hard due to lack of any labels, yet especially critical for deep NN based models with a long list of hyperparameters. Further, we propose a new pooling strategy for graph-level embedding, called MMD-pooling, that is geared toward detecting distribution anomalies which has not been considered before. Through extensive experiments on 15 real-world datasets, we show that (i) GLAM outperforms node-level and two-stage (i.e. not end-to-end) baselines, and (ii) model selection picks a signiﬁcantly more effective model than expectation (i.e. average) –without using any labels– among candidates with otherwise large variation in performance.},
+}
+
+@article{2022DOS_Journal,
+  title={Density of States for Fast Embedding Node-Attributed Graphs},
+  author={Zhao, Lingxiao and Sawlani, Saurabh and Akoglu, Leman},
+  journal={Knowledge and Information Systems (KAIS) (Journal)},
+  year={2022},
+}
+
+
 @article{Lim2022SignNet,
   title={Sign and Basis Invariant Networks for Spectral Graph Representation Learning},
   author={Lim*, Derek and Robinson*, Joshua and Zhao, Lingxiao and Smidt, Tess and Sra, Suvrit and Maron, Haggai and Jegelka, Stefanie},
