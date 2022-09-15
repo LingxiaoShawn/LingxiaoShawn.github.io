@@ -11,7 +11,8 @@ news: true
 social: true
 ---
 
-I'm a 4th-year Ph.D. student of Machine Learning Joint Public Policy in [Machine Learning Department](https://www.ml.cmu.edu/) and [Heinz College](https://www.heinz.cmu.edu/) at Carnegie Mellon University, advised by Prof. [Leman Akoglu](http://www.andrew.cmu.edu/user/lakoglu/). My research mainly focuses on developing machine learning algorithms over graph-structured data, and applying designed algorithm to solve real-world problems.
+I'm a 5th-year Ph.D. student of Machine Learning Joint Public Policy in [Machine Learning Department](https://www.ml.cmu.edu/) and [Heinz College](https://www.heinz.cmu.edu/) at Carnegie Mellon University, advised by Prof. [Leman Akoglu](http://www.andrew.cmu.edu/user/lakoglu/). My research mainly focuses on developing machine learning algorithms over graph-structured data, and applying designed algorithm to solve real-world problems.
+**I'm actively looking for research positions in industry and postdoc in university now! Please feel free to contact me.**
 
 I finished my Master's in [ECE](https://www.ece.cmu.edu/) department at Carnegie Mellon Univrsity, and Bachelor's (while I was in power system area) in EE department at Xi'an Jiaotong University. 
 

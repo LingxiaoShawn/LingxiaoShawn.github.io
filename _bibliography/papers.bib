@@ -2,8 +2,6 @@
 ---
 
 
-
-
 @article{zhao2022KSetGNN,
   title={A Practical, Progressively-Expressive GNN},
   author={Zhao, Lingxiao and Shah, Neil and Akoglu, Leman},
@@ -228,7 +226,7 @@
 @article{zhu2020homophily,
   title={Generalizing Graph Neural Networks Beyond Homophily},
   author={Zhu, Jiong and Yan, Yujun and Zhao, Lingxiao and Heimann, Mark and Akoglu, Leman and   Koutra, Danai},
-  journal={arXiv preprint arXiv:2006.11468},
+  journal={NeurIPS},
   year={2020},
   abstract={We investigate the representation power of graph neural networks in the semi-supervised node classification task under heterophily or low homophily, i.e., in networks where connected nodes may have different class labels and dissimilar features. Most existing GNNs fail to generalize to this setting, and are even outperformed by models that ignore the graph structure (e.g., multilayer perceptrons). Motivated by this limitation, we identify a set of key designs -- ego- and neighbor-embedding separation, higher-order neighborhoods, and combination of intermediate representations -- that boost learning from the graph structure under heterophily, and combine them into a new graph convolutional neural network, H2GCN. Going beyond the traditional benchmarks with strong homophily, our empirical analysis on synthetic and real networks shows that, thanks to the identified designs, H2GCN has consistently strong performance across the full spectrum of low-to-high homophily, unlike competitive prior models without them.},
   extpdf={https://arxiv.org/abs/2006.11468.pdf}
@@ -237,8 +235,8 @@
 @article{chen2020graph,
   title={Graph Unrolling Networks: Interpretable Neural Networks for Graph Signal Denoising},
   author={Chen, Siheng and Eldar, Yonina C and Zhao, Lingxiao},
-  journal={arXiv preprint arXiv:2006.01301},
-  year={2020},
+  journal={IEEE Transactions on Signal Processing},
+  year={2021},
   extpdf={https://arxiv.org/pdf/2006.01301.pdf},
   abstract={We propose an interpretable graph neural network framework to denoise single or multiple noisy graph signals. The proposed graph unrolling networks expand algorithm unrolling to the graph domain and provide an interpretation of the architecture design from a signal processing perspective. We unroll an iterative denoising algorithm by mapping each iteration into a single network layer where the feed-forward process is equivalent to iteratively denoising graph signals. We train the graph unrolling networks through unsupervised learning, where the input noisy graph signals are used to supervise the networks. By leveraging the learning ability of neural networks, we adaptively capture appropriate priors from input noisy graph signals, instead of manually choosing signal priors. A core component of graph unrolling networks is the edge-weight-sharing graph convolution operation, which parameterizes each edge weight by a trainable kernel function where the trainable parameters are shared by all the edges. The proposed convolution is permutation-equivariant and can flexibly adjust the edge weights to various graph signals. We then consider two special cases of this class of networks, graph unrolling sparse coding (GUSC) and graph unrolling trend filtering (GUTF), by unrolling sparse coding and trend filtering, respectively. To validate the proposed methods, we conduct extensive experiments on both real-world datasets and simulated datasets, and demonstrate that our methods have smaller denoising errors than conventional denoising algorithms and state-of-the-art graph neural networks. For denoising a single smooth graph signal, the normalized mean square error of the proposed networks is around 40% and 60% lower than that of graph Laplacian denoising and graph wavelets, respectively.}
 }
