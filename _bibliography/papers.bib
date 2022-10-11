@@ -8,6 +8,7 @@
   journal={NeurIPS},
   year={2022},
   abstract={Message passing neural networks (MPNNs) have become a dominant flavor of graph neural networks (GNNs) in recent years. Yet, MPNNs come with notable limitations; namely, they are at most as powerful as the 1-dimensional Weisfeiler-Leman (1-WL) test in distinguishing graphs in a graph isomorphism testing frame-work. To this end, researchers have drawn inspiration from the k-WL hierarchy to develop more expressive GNNs. However, current k-WL-equivalent GNNs are not practical for even small values of k, as k-WL becomes combinatorially more complex as k grows. At the same time, several works have found great empirical success in graph learning tasks without highly expressive models, implying that chasing expressiveness with a “coarse-grained ruler” of expressivity like k-WL is often unneeded in practical tasks. To truly understand the expressiveness-complexity tradeoff, one desires a more “fine-grained ruler,” which can more gradually increase expressiveness. Our work puts forth such a proposal: Namely, we first propose the (k, c)(≤)-SETWL hierarchy with greatly reduced complexity from k-WL, achieved by moving from k-tuples of nodes to sets with ≤k nodes defined over ≤c connected components in the induced original graph. We show favorable theoretical results for this model in relation to k-WL, and concretize it via (k, c)(≤)-SETGNN, which is as expressive as (k, c)(≤)-SETWL. Our model is practical and progressively-expressive, increasing in power with k and c. We demonstrate effectiveness on several benchmark datasets, achieving several state-of-the-art results with runtime and memory usage applicable to practical graphs.},
+  code={https://github.com/LingxiaoShawn/KCSetGNN}
 }
 
 
@@ -18,6 +19,7 @@
   year={2022},
   abstract={Outlier detection (OD) literature exhibits numerous algorithms as it applies to diverse domains. However, given a new detection task, it is unclear how to choose an algorithm to use, nor how to set its hyperparameter(s) (HPs) in unsupervised settings. HP tuning is an ever-growing problem with the arrival of many new detectors based on deep learning. While they have appealing properties such as task- driven representation learning and end-to-end optimization, deep models come with a long list of HPs. Surprisingly, the issue of model selection in the outlier mining literature has been "the elephant in the room"; a significant factor in unlocking the utmost potential of deep methods, yet little said or done to systematically tackle the issue. In the first part of this paper, we conduct the first large-scale analysis on the HP sensitivity of deep OD methods, and through more than 35,000 trained models, quantitatively demonstrate that model selection is inevitable. Next, we design a HP-robust and scalable deep hyper-ensemble model called ROBOD that assembles models with varying HP configurations, bypassing the choice paralysis. Importantly, we introduce novel strategies to speed up ensemble training, such as parameter sharing, batch/simultaneous training, and data subsampling, that allow us to train fewer models with fewer parameters. Extensive experiments on both image and tabular datasets show that ROBOD achieves and retains robust, state-of-the-art detection performance as compared to its modern counterparts, while taking only 2-10% of the time by the naive hyper-ensemble with independent training.},
   extpdf={https://arxiv.org/pdf/2206.07647.pdf},
+  code={https://github.com/xyvivian/ROBOD}
 }
 
 
@@ -221,7 +223,8 @@
   journal={ICML 2020 GRLP Workshop},
   year={2020},
   abstract={Graph convolution operator of the GCN model is originally motivated from a localized first-order approximation of spectral graph convolutions.This work stands on a different view; establishing a connection between graph convolution and graph-regularized PCA. Based on this connection, GCN architecture, shaped by stacking graph convolution layers, shares a close relationship with stacking graph-regularized PCA (GPCA). We empirically demonstrate that the unsupervised embeddings by GPCA paired with a logistic regression classifier achieves similar performance to GCN on semi-supervised node classification tasks. Further, we capitalize on the discovered relationship to design an effective initialization strategy for GCN based on stacking GPCA.},
-  extpdf={https://arxiv.org/pdf/2006.12294.pdf}
+  extpdf={https://arxiv.org/pdf/2006.12294.pdf},
+  code={https://github.com/LingxiaoShawn/GPCANet}
 }
 
 @article{zhu2020homophily,
@@ -230,7 +233,8 @@
   journal={NeurIPS},
   year={2020},
   abstract={We investigate the representation power of graph neural networks in the semi-supervised node classification task under heterophily or low homophily, i.e., in networks where connected nodes may have different class labels and dissimilar features. Most existing GNNs fail to generalize to this setting, and are even outperformed by models that ignore the graph structure (e.g., multilayer perceptrons). Motivated by this limitation, we identify a set of key designs -- ego- and neighbor-embedding separation, higher-order neighborhoods, and combination of intermediate representations -- that boost learning from the graph structure under heterophily, and combine them into a new graph convolutional neural network, H2GCN. Going beyond the traditional benchmarks with strong homophily, our empirical analysis on synthetic and real networks shows that, thanks to the identified designs, H2GCN has consistently strong performance across the full spectrum of low-to-high homophily, unlike competitive prior models without them.},
-  extpdf={https://arxiv.org/abs/2006.11468.pdf}
+  extpdf={https://arxiv.org/abs/2006.11468.pdf},
+  code={https://github.com/GemsLab/H2GCN}
 }
 
 @article{chen2020graph,
