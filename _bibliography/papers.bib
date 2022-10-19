@@ -8,7 +8,8 @@
   journal={NeurIPS},
   year={2022},
   abstract={Message passing neural networks (MPNNs) have become a dominant flavor of graph neural networks (GNNs) in recent years. Yet, MPNNs come with notable limitations; namely, they are at most as powerful as the 1-dimensional Weisfeiler-Leman (1-WL) test in distinguishing graphs in a graph isomorphism testing frame-work. To this end, researchers have drawn inspiration from the k-WL hierarchy to develop more expressive GNNs. However, current k-WL-equivalent GNNs are not practical for even small values of k, as k-WL becomes combinatorially more complex as k grows. At the same time, several works have found great empirical success in graph learning tasks without highly expressive models, implying that chasing expressiveness with a “coarse-grained ruler” of expressivity like k-WL is often unneeded in practical tasks. To truly understand the expressiveness-complexity tradeoff, one desires a more “fine-grained ruler,” which can more gradually increase expressiveness. Our work puts forth such a proposal: Namely, we first propose the (k, c)(≤)-SETWL hierarchy with greatly reduced complexity from k-WL, achieved by moving from k-tuples of nodes to sets with ≤k nodes defined over ≤c connected components in the induced original graph. We show favorable theoretical results for this model in relation to k-WL, and concretize it via (k, c)(≤)-SETGNN, which is as expressive as (k, c)(≤)-SETWL. Our model is practical and progressively-expressive, increasing in power with k and c. We demonstrate effectiveness on several benchmark datasets, achieving several state-of-the-art results with runtime and memory usage applicable to practical graphs.},
-  code={https://github.com/LingxiaoShawn/KCSetGNN}
+  code={https://github.com/LingxiaoShawn/KCSetGNN},
+  extpdf={https://arxiv.org/abs/2210.09521}
 }
 
 
@@ -30,6 +31,8 @@
   journal={ICDM (Short Paper)},
   year={2022},
   abstract={Graph-based anomaly detection ﬁnds numerous applications in the real-world. Thus, there exists extensive literature on the topic that has recently shifted toward deep detection models due to advances in deep learning and graph neural networks (GNNs). A vast majority of prior work focuses on detecting node/edge/subgraph anomalies within a single graph, with much less work on graph-level anomaly detection in a graph database. This work aims to ﬁll two gaps in the literature: We (1) design GLAM, an end-to-end graph-level anomaly detection model based on GNNs, and (2) focus on unsupervised model selection, which is notoriously hard due to lack of any labels, yet especially critical for deep NN based models with a long list of hyperparameters. Further, we propose a new pooling strategy for graph-level embedding, called MMD-pooling, that is geared toward detecting distribution anomalies which has not been considered before. Through extensive experiments on 15 real-world datasets, we show that (i) GLAM outperforms node-level and two-stage (i.e. not end-to-end) baselines, and (ii) model selection picks a signiﬁcantly more effective model than expectation (i.e. average) –without using any labels– among candidates with otherwise large variation in performance.},
+  extpdf={https://arxiv.org/abs/2210.09535},
+  code={https://github.com/sawlani/GLAM}
 }
 
 @article{2022DOS_Journal,
