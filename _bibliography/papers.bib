@@ -1,6 +1,67 @@
 ---
 ---
 
+@article{zhao2024pard,
+  title={Pard: Permutation-Invariant Autoregressive Diffusion for Graph Generation},
+  author={Zhao, Lingxiao and Ding, Xueying and Akoglu, Leman},
+  journal={arXiv preprint arXiv:2402.03687},
+  year={2024},
+  abstract={Graph generation has been dominated by autoregressive models due to their simplicity and effectiveness, despite their sensitivity to ordering. Yet diffusion models have garnered increasing attention, as they offer comparable performance while being permutation-invariant. Current graph diffusion models generate graphs in a one-shot fashion, but they require extra features and thousands of denoising steps to achieve optimal performance. We introduce PARD, a Permutation-invariant Auto Regressive Diffusion model that integrates diffusion models with autoregressive methods. PARD harnesses the effectiveness and efficiency of the autoregressive model while maintaining permutation invariance without ordering sensitivity. Specifically, we show that contrary to sets, elements in a graph are not entirely unordered and there is a unique partial order for nodes and edges. With this partial order, PARD generates a graph in a block-by-block, autoregressive fashion, where each block's probability is conditionally modeled by a shared diffusion model with an equivariant network. To ensure efficiency while being expressive, we further propose a higher-order graph transformer, which integrates transformer with PPGN. Like GPT, we extend the higher-order graph transformer to support parallel training of all blocks. Without any extra features, PARD achieves state-of-the-art performance on molecular and non-molecular datasets, and scales to large datasets like MOSES containing 1.9M molecules.},
+  extpdf={https://arxiv.org/pdf/2402.03687.pdf}
+}
+
+
+@article{zhao2024improving,
+  title={Improving and Unifying Discrete\&Continuous-time Discrete Denoising Diffusion},
+  author={Zhao, Lingxiao and Ding, Xueying and Yu, Lijun and Akoglu, Leman},
+  journal={arXiv preprint arXiv:2402.03701},
+  year={2024},
+  abstract={Discrete diffusion models have seen a surge of attention with applications on naturally discrete data such as language and graphs. Although discrete-time discrete diffusion has been established for a while, only recently Campbell et al. (2022) introduced the first framework for continuous-time discrete diffusion. However, their training and sampling processes differ significantly from the discrete-time version, necessitating nontrivial approximations for tractability. In this paper, we first present a series of mathematical simplifications of the variational lower bound that enable more accurate and easy-to-optimize training for discrete diffusion. In addition, we derive a simple formulation for backward denoising that enables exact and accelerated sampling, and importantly, an elegant unification of discrete-time and continuous-time discrete diffusion. Thanks to simpler analytical formulations, both forward and now also backward probabilities can flexibly accommodate any noise distribution, including different noise distributions for multi-element objects. Experiments show that our proposed USD3 (for Unified Simplified Discrete Denoising Diffusion) outperform all SOTA baselines on established datasets. We open-source our unified code at https://github.com/LingxiaoShawn/USD3.},
+  extpdf={https://arxiv.org/pdf/2402.03701.pdf}
+}
+
+
+@inproceedings{lee2024descriptive,
+      title={Descriptive Kernel Convolution Network with Improved Random Walk Kernel}, 
+      author={Meng-Chieh Lee* and Lingxiao Zhao* and Leman Akoglu},
+      year={2024},
+      eprint={2402.06087},
+      abstract={Graph kernels used to be the dominant approach to feature engineering for structured data, which are superseded by modern GNNs as the former lacks learnability. Recently, a suite of Kernel Convolution Networks (KCNs) successfully revitalized graph kernels by introducing learnability, which convolves input with learnable hidden graphs using a certain graph kernel. The random walk kernel (RWK) has been used as the default kernel in many KCNs, gaining increasing attention. In this paper, we first revisit the RWK and its current usage in KCNs, revealing several shortcomings of the existing designs, and propose an improved graph kernel RWK+, by introducing color-matching random walks and deriving its efficient computation. We then propose RWK+CN, a KCN that uses RWK+ as the core kernel to learn descriptive graph features with an unsupervised objective, which can not be achieved by GNNs. Further, by unrolling RWK+, we discover its connection with a regular GCN layer, and propose a novel GNN layer RWK+Conv. In the first part of experiments, we demonstrate the descriptive learning ability of RWK+CN with the improved random walk kernel RWK+ on unsupervised pattern mining tasks; in the second part, we show the effectiveness of RWK+ for a variety of KCN architectures and supervised graph learning tasks, and demonstrate the expressiveness of RWK+Conv layer, especially on the graph-level tasks. RWK+ and RWK+Conv adapt to various real-world applications, including web applications such as bot detection in a web-scale Twitter social network, and community classification in Reddit social interaction networks.},
+      extpdf={https://arxiv.org/pdf/2402.06087.pdf}
+}
+
+
+@inproceedings{sotiropoulos2023adamm,
+  title={ADAMM: Anomaly Detection of Attributed Multi-graphs with Metadata: A Unified Neural Network Approach},
+  author={Sotiropoulos*, Konstantinos and Zhao*, Lingxiao and Liang, Pierre Jinghong and Akoglu, Leman},
+  booktitle={2023 IEEE International Conference on Big Data (BigData)},
+  pages={865--874},
+  year={2023},
+  organization={IEEE},
+  abstract={Given a complex graph database of node- and edge-attributed multi-graphs as well as associated metadata for each graph, how can we spot the anomalous instances? Many real-world problems can be cast as graph inference tasks where the graph representation could capture complex relational phenomena (e.g., transactions among financial accounts in a journal entry), along with metadata reflecting tabular features (e.g. approver, effective date, etc.). While numerous anomaly detectors based on Graph Neural Networks (GNNs) have been proposed, none are capable of directly handling directed graphs with multi-edges and self-loops. Furthermore, the simultaneous handling of relational and tabular features remains an unexplored area. In this work we propose ADAMM, a novel graph neural network model that handles directed multi-graphs, providing a unified end-to-end architecture that fuses metadata and graph-level representation learning through an unsupervised anomaly detection objective. Experiments on datasets from two different domains, namely, general-ledger journal entries from different firms (accounting) as well as human GPS trajectories from thousands of individuals (urban mobility), validate ADAMM’s generality and detection effectiveness of expert-guided and ground-truth anomalies. Notably, ADAMM outperforms existing baselines that handle the two data modalities (graph and metadata) separately with post hoc synthesis efforts.},
+  extpdf={https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10386245},
+}
+
+@inproceedings{yoo2023dsv,
+  title={DSV: an alignment validation loss for self-supervised outlier model selection},
+  author={Yoo, Jaemin and Zhao, Yue and Zhao, Lingxiao and Akoglu, Leman},
+  booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases},
+  pages={254--269},
+  year={2023},
+  organization={Springer},
+  abstract={Self-supervised learning (SSL) has proven effective in solving various problems by generating internal supervisory signals. Unsupervised anomaly detection, which faces the high cost of obtaining true labels, is an area that can greatly benefit from SSL. However, recent literature suggests that tuning the hyperparameters (HP) of data augmentation functions is crucial to the success of SSL-based anomaly detection (SSAD), yet a systematic method for doing so remains unknown. In this work, we propose DSV (Discordance and Separability Validation), an unsupervised validation loss to select high-performing detection models with effective augmentation HPs. DSV captures the alignment between an augmentation function and the anomaly-generating mechanism with surrogate losses, which approximate the discordance and separability of test data, respectively. As a result, the evaluation via DSV leads to selecting an effective SSAD model exhibiting better alignment, which results in high detection accuracy. We theoretically derive the degree of approximation conducted by the surrogate losses and empirically show that DSV outperforms a wide range of baselines on 21 real-world tasks.},
+  extpdf={https://arxiv.org/pdf/2307.06534.pdf},
+
+}
+
+@article{yoo2023end,
+  title={End-to-End Augmentation Hyperparameter Tuning for Self-Supervised Anomaly Detection},
+  author={Yoo, Jaemin and Zhao, Lingxiao and Akoglu, Leman},
+  journal={arXiv preprint arXiv:2306.12033},
+  year={2023},
+  abstract={Self-supervised learning (SSL) has emerged as a promising paradigm that presents self-generated supervisory signals to real-world problems, bypassing the extensive manual labeling burden. SSL is especially attractive for unsupervised tasks such as anomaly detection, where labeled anomalies are often nonexistent and costly to obtain. While self-supervised anomaly detection (SSAD) has seen a recent surge of interest, the literature has failed to treat data augmentation as a hyperparameter. Meanwhile, recent works have reported that the choice of augmentation has significant impact on detection performance. In this paper, we introduce ST-SSAD (Self-Tuning Self-Supervised Anomaly Detection), the first systematic approach to SSAD in regards to rigorously tuning augmentation. To this end, our work presents two key contributions. The first is a new unsupervised validation loss that quantifies the alignment between the augmented training data and the (unlabeled) test data. In principle we adopt transduction, quantifying the extent to which augmentation mimics the true anomaly-generating mechanism, in contrast to augmenting data with arbitrary pseudo anomalies without regard to test data. Second, we present new differentiable augmentation functions, allowing data augmentation hyperparameter(s) to be tuned end-to-end via our proposed validation loss. Experiments on two testbeds with semantic class anomalies and subtle industrial defects show that systematically tuning augmentation offers significant performance gains over current practices.},
+  extpdf={https://arxiv.org/pdf/2306.12033.pdf},
+}
 
 @article{zhao2022KSetGNN,
   title={A Practical, Progressively-Expressive GNN},
