@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Lingxiao Zhao | Publications</title>
+  <meta name="description" content="行路漫漫，上下求索
+">
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/publications/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Lingxiao</strong> Zhao
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="/">About</a>
+
+        <!-- Pages -->
+        
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="/publications/">Publications</a>
+          
+        
+          
+            <a class="page-link" href="/teaching/">Misc.</a>
+          
+        
+          
+        
+
+        <!-- Blog -->
+        <a class="page-link" href="/blog/">Blog</a>
+
+        <!-- CV link -->
+        <a class="page-link" href="/assets/pdf/CV.pdf">Vitae</a>
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Publications</h1>
+    <h5 class="post-description">star(*) denotes equal contribution</h5>
+  </header>
+
+  <article class="post-content Publications clearfix">
+    
+<h3 class="year">2024</h3>
+<ol class="bibliography"><li>
+
+<div id="zhao2024pard">
+  
+    <span class="title">Pard: Permutation-Invariant Autoregressive Diffusion for Graph Generation</span>
+    <span class="author">
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Xueying Ding,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>arXiv preprint arXiv:2402.03687</em>
+    
+    
+      2024
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/pdf/2402.03687.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Graph generation has been dominated by autoregressive models due to their simplicity and effectiveness, despite their sensitivity to ordering. Yet diffusion models have garnered increasing attention, as they offer comparable performance while being permutation-invariant. Current graph diffusion models generate graphs in a one-shot fashion, but they require extra features and thousands of denoising steps to achieve optimal performance. We introduce PARD, a Permutation-invariant Auto Regressive Diffusion model that integrates diffusion models with autoregressive methods. PARD harnesses the effectiveness and efficiency of the autoregressive model while maintaining permutation invariance without ordering sensitivity. Specifically, we show that contrary to sets, elements in a graph are not entirely unordered and there is a unique partial order for nodes and edges. With this partial order, PARD generates a graph in a block-by-block, autoregressive fashion, where each block’s probability is conditionally modeled by a shared diffusion model with an equivariant network. To ensure efficiency while being expressive, we further propose a higher-order graph transformer, which integrates transformer with PPGN. Like GPT, we extend the higher-order graph transformer to support parallel training of all blocks. Without any extra features, PARD achieves state-of-the-art performance on molecular and non-molecular datasets, and scales to large datasets like MOSES containing 1.9M molecules.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="zhao2024improving">
+  
+    <span class="title">Improving and Unifying Discrete&amp;Continuous-time Discrete Denoising Diffusion</span>
+    <span class="author">
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Xueying Ding,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Lijun Yu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>arXiv preprint arXiv:2402.03701</em>
+    
+    
+      2024
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/pdf/2402.03701.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Discrete diffusion models have seen a surge of attention with applications on naturally discrete data such as language and graphs. Although discrete-time discrete diffusion has been established for a while, only recently Campbell et al. (2022) introduced the first framework for continuous-time discrete diffusion. However, their training and sampling processes differ significantly from the discrete-time version, necessitating nontrivial approximations for tractability. In this paper, we first present a series of mathematical simplifications of the variational lower bound that enable more accurate and easy-to-optimize training for discrete diffusion. In addition, we derive a simple formulation for backward denoising that enables exact and accelerated sampling, and importantly, an elegant unification of discrete-time and continuous-time discrete diffusion. Thanks to simpler analytical formulations, both forward and now also backward probabilities can flexibly accommodate any noise distribution, including different noise distributions for multi-element objects. Experiments show that our proposed USD3 (for Unified Simplified Discrete Denoising Diffusion) outperform all SOTA baselines on established datasets. We open-source our unified code at https://github.com/LingxiaoShawn/USD3.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="lee2024descriptive">
+  
+    <span class="title">Descriptive Kernel Convolution Network with Improved Random Walk Kernel</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Meng-Chieh Lee*,
+              
+            
+          
+        
+      
+        
+          
+            
+              <em>Lingxiao Zhao*</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In </em>
+    
+    
+      2024
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/pdf/2402.06087.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Graph kernels used to be the dominant approach to feature engineering for structured data, which are superseded by modern GNNs as the former lacks learnability. Recently, a suite of Kernel Convolution Networks (KCNs) successfully revitalized graph kernels by introducing learnability, which convolves input with learnable hidden graphs using a certain graph kernel. The random walk kernel (RWK) has been used as the default kernel in many KCNs, gaining increasing attention. In this paper, we first revisit the RWK and its current usage in KCNs, revealing several shortcomings of the existing designs, and propose an improved graph kernel RWK+, by introducing color-matching random walks and deriving its efficient computation. We then propose RWK+CN, a KCN that uses RWK+ as the core kernel to learn descriptive graph features with an unsupervised objective, which can not be achieved by GNNs. Further, by unrolling RWK+, we discover its connection with a regular GCN layer, and propose a novel GNN layer RWK+Conv. In the first part of experiments, we demonstrate the descriptive learning ability of RWK+CN with the improved random walk kernel RWK+ on unsupervised pattern mining tasks; in the second part, we show the effectiveness of RWK+ for a variety of KCN architectures and supervised graph learning tasks, and demonstrate the expressiveness of RWK+Conv layer, especially on the graph-level tasks. RWK+ and RWK+Conv adapt to various real-world applications, including web applications such as bot detection in a web-scale Twitter social network, and community classification in Reddit social interaction networks.</p>
+  </span>
+  
+</div>
+</li></ol>
+
+<h3 class="year">2023</h3>
+<ol class="bibliography"><li>
+
+<div id="sotiropoulos2023adamm">
+  
+    <span class="title">ADAMM: Anomaly Detection of Attributed Multi-graphs with Metadata: A Unified Neural Network Approach</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Konstantinos Sotiropoulos*,
+              
+            
+          
+        
+      
+        
+          
+            
+              <em>Lingxiao Zhao*</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Pierre Jinghong Liang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In 2023 IEEE International Conference on Big Data (BigData)</em>
+    
+    
+      2023
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10386245" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Given a complex graph database of node- and edge-attributed multi-graphs as well as associated metadata for each graph, how can we spot the anomalous instances? Many real-world problems can be cast as graph inference tasks where the graph representation could capture complex relational phenomena (e.g., transactions among financial accounts in a journal entry), along with metadata reflecting tabular features (e.g. approver, effective date, etc.). While numerous anomaly detectors based on Graph Neural Networks (GNNs) have been proposed, none are capable of directly handling directed graphs with multi-edges and self-loops. Furthermore, the simultaneous handling of relational and tabular features remains an unexplored area. In this work we propose ADAMM, a novel graph neural network model that handles directed multi-graphs, providing a unified end-to-end architecture that fuses metadata and graph-level representation learning through an unsupervised anomaly detection objective. Experiments on datasets from two different domains, namely, general-ledger journal entries from different firms (accounting) as well as human GPS trajectories from thousands of individuals (urban mobility), validate ADAMM’s generality and detection effectiveness of expert-guided and ground-truth anomalies. Notably, ADAMM outperforms existing baselines that handle the two data modalities (graph and metadata) separately with post hoc synthesis efforts.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="yoo2023dsv">
+  
+    <span class="title">DSV: an alignment validation loss for self-supervised outlier model selection</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Jaemin Yoo,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Yue Zhao,
+              
+            
+          
+        
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Joint European Conference on Machine Learning and Knowledge Discovery in Databases</em>
+    
+    
+      2023
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/pdf/2307.06534.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Self-supervised learning (SSL) has proven effective in solving various problems by generating internal supervisory signals. Unsupervised anomaly detection, which faces the high cost of obtaining true labels, is an area that can greatly benefit from SSL. However, recent literature suggests that tuning the hyperparameters (HP) of data augmentation functions is crucial to the success of SSL-based anomaly detection (SSAD), yet a systematic method for doing so remains unknown. In this work, we propose DSV (Discordance and Separability Validation), an unsupervised validation loss to select high-performing detection models with effective augmentation HPs. DSV captures the alignment between an augmentation function and the anomaly-generating mechanism with surrogate losses, which approximate the discordance and separability of test data, respectively. As a result, the evaluation via DSV leads to selecting an effective SSAD model exhibiting better alignment, which results in high detection accuracy. We theoretically derive the degree of approximation conducted by the surrogate losses and empirically show that DSV outperforms a wide range of baselines on 21 real-world tasks.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="yoo2023end">
+  
+    <span class="title">End-to-End Augmentation Hyperparameter Tuning for Self-Supervised Anomaly Detection</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Jaemin Yoo,
+              
+            
+          
+        
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>arXiv preprint arXiv:2306.12033</em>
+    
+    
+      2023
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/pdf/2306.12033.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Self-supervised learning (SSL) has emerged as a promising paradigm that presents self-generated supervisory signals to real-world problems, bypassing the extensive manual labeling burden. SSL is especially attractive for unsupervised tasks such as anomaly detection, where labeled anomalies are often nonexistent and costly to obtain. While self-supervised anomaly detection (SSAD) has seen a recent surge of interest, the literature has failed to treat data augmentation as a hyperparameter. Meanwhile, recent works have reported that the choice of augmentation has significant impact on detection performance. In this paper, we introduce ST-SSAD (Self-Tuning Self-Supervised Anomaly Detection), the first systematic approach to SSAD in regards to rigorously tuning augmentation. To this end, our work presents two key contributions. The first is a new unsupervised validation loss that quantifies the alignment between the augmented training data and the (unlabeled) test data. In principle we adopt transduction, quantifying the extent to which augmentation mimics the true anomaly-generating mechanism, in contrast to augmenting data with arbitrary pseudo anomalies without regard to test data. Second, we present new differentiable augmentation functions, allowing data augmentation hyperparameter(s) to be tuned end-to-end via our proposed validation loss. Experiments on two testbeds with semantic class anomalies and subtle industrial defects show that systematically tuning augmentation offers significant performance gains over current practices.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="2022DOS_Journal">
+  
+    <span class="title">Density of States for Fast Embedding Node-Attributed Graphs</span>
+    <span class="author">
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Saurabh Sawlani,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>Knowledge and Information Systems (KAIS) (Journal)</em>
+    
+    
+      2023
+    
+    </span>
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+    [<a href="https://link.springer.com/content/pdf/10.1007/s10115-023-01836-3.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="Lim2022SignNet">
+  
+    <span class="title">Sign and Basis Invariant Networks for Spectral Graph Representation Learning</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Derek Lim*,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Joshua Robinson*,
+              
+            
+          
+        
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Tess Smidt,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Suvrit Sra,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Haggai Maron,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Stefanie Jegelka
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>ICLR</em>
+    
+    
+      2023
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/pdf/2202.13013.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Many machine learning tasks involve processing eigenvectors derived from data. Especially valuable are Laplacian eigenvectors, which capture useful structural information about graphs and other geometric objects. However, ambiguities arise when computing eigenvectors: for each eigenvector v, the sign flipped -v is also an eigenvector. More generally, higher dimensional eigenspaces contain infinitely many choices of basis eigenvectors. These ambiguities make it a challenge to process eigenvectors and eigenspaces in a consistent way. In this work we introduce SignNet and BasisNet – new neural architectures that are invariant to all requisite symmetries and hence process collections of eigenspaces in a principled manner. Our networks are universal, i.e., they can approximate any continuous function of eigenvectors with the proper invariances. They are also theoretically strong for graph representation learning – they can approximate any spectral graph convolution, can compute spectral invariants that go beyond message passing neural networks, and can provably simulate previously proposed graph positional encodings. Experiments show the strength of our networks for learning spectral graph filters and learning graph positional encodings.</p>
+  </span>
+  
+</div>
+</li></ol>
+
+<h3 class="year">2022</h3>
+<ol class="bibliography"><li>
+
+<div id="zhao2022KSetGNN">
+  
+    <span class="title">A Practical, Progressively-Expressive GNN</span>
+    <span class="author">
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Louis Härtel,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Neil Shah,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>NeurIPS</em>
+    
+    
+      2022
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2210.09521" target="_blank">PDF</a>]
+  
+  
+  
+    [<a href="/assets/pdf/KCSetGNN_poster.pdf" target="_blank">Poster</a>]
+  
+  
+    [<a href="/assets/pdf/22-NeurIPS-KCSetGNN-new.pdf" target="_blank">Slides</a>]
+  
+  
+    [<a href="https://github.com/LingxiaoShawn/KCSetGNN" target="_blank">Code</a>]
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Message passing neural networks (MPNNs) have become a dominant flavor of graph neural networks (GNNs) in recent years. Yet, MPNNs come with notable limitations; namely, they are at most as powerful as the 1-dimensional Weisfeiler-Leman (1-WL) test in distinguishing graphs in a graph isomorphism testing frame-work. To this end, researchers have drawn inspiration from the k-WL hierarchy to develop more expressive GNNs. However, current k-WL-equivalent GNNs are not practical for even small values of k, as k-WL becomes combinatorially more complex as k grows. At the same time, several works have found great empirical success in graph learning tasks without highly expressive models, implying that chasing expressiveness with a “coarse-grained ruler” of expressivity like k-WL is often unneeded in practical tasks. To truly understand the expressiveness-complexity tradeoff, one desires a more “fine-grained ruler,” which can more gradually increase expressiveness. Our work puts forth such a proposal: Namely, we first propose the (k, c)(≤)-SETWL hierarchy with greatly reduced complexity from k-WL, achieved by moving from k-tuples of nodes to sets with ≤k nodes defined over ≤c connected components in the induced original graph. We show favorable theoretical results for this model in relation to k-WL, and concretize it via (k, c)(≤)-SETGNN, which is as expressive as (k, c)(≤)-SETWL. Our model is practical and progressively-expressive, increasing in power with k and c. We demonstrate effectiveness on several benchmark datasets, achieving several state-of-the-art results with runtime and memory usage applicable to practical graphs.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="ding2022HyperEnsemble">
+  
+    <span class="title">Hyperparameter Sensitivity in Deep Outlier Detection: Analysis and a Scalable Hyper-Ensemble Solution</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Xueying Ding,
+              
+            
+          
+        
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>NeurIPS</em>
+    
+    
+      2022
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/pdf/2206.07647.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/xyvivian/ROBOD" target="_blank">Code</a>]
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Outlier detection (OD) literature exhibits numerous algorithms as it applies to diverse domains. However, given a new detection task, it is unclear how to choose an algorithm to use, nor how to set its hyperparameter(s) (HPs) in unsupervised settings. HP tuning is an ever-growing problem with the arrival of many new detectors based on deep learning. While they have appealing properties such as task- driven representation learning and end-to-end optimization, deep models come with a long list of HPs. Surprisingly, the issue of model selection in the outlier mining literature has been "the elephant in the room"; a significant factor in unlocking the utmost potential of deep methods, yet little said or done to systematically tackle the issue. In the first part of this paper, we conduct the first large-scale analysis on the HP sensitivity of deep OD methods, and through more than 35,000 trained models, quantitatively demonstrate that model selection is inevitable. Next, we design a HP-robust and scalable deep hyper-ensemble model called ROBOD that assembles models with varying HP configurations, bypassing the choice paralysis. Importantly, we introduce novel strategies to speed up ensemble training, such as parameter sharing, batch/simultaneous training, and data subsampling, that allow us to train fewer models with fewer parameters. Extensive experiments on both image and tabular datasets show that ROBOD achieves and retains robust, state-of-the-art detection performance as compared to its modern counterparts, while taking only 2-10% of the time by the naive hyper-ensemble with independent training.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="2022GLAM">
+  
+    <span class="title">Graph-level Anomaly Detection with Unsupervised GNNs</span>
+    <span class="author">
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Saurabh Sawlani,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Arvind Srinivasan,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>ICDM (Short Paper)</em>
+    
+    
+      2022
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2210.09535" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/sawlani/GLAM" target="_blank">Code</a>]
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Graph-based anomaly detection ﬁnds numerous applications in the real-world. Thus, there exists extensive literature on the topic that has recently shifted toward deep detection models due to advances in deep learning and graph neural networks (GNNs). A vast majority of prior work focuses on detecting node/edge/subgraph anomalies within a single graph, with much less work on graph-level anomaly detection in a graph database. This work aims to ﬁll two gaps in the literature: We (1) design GLAM, an end-to-end graph-level anomaly detection model based on GNNs, and (2) focus on unsupervised model selection, which is notoriously hard due to lack of any labels, yet especially critical for deep NN based models with a long list of hyperparameters. Further, we propose a new pooling strategy for graph-level embedding, called MMD-pooling, that is geared toward detecting distribution anomalies which has not been considered before. Through extensive experiments on 15 real-world datasets, we show that (i) GLAM outperforms node-level and two-stage (i.e. not end-to-end) baselines, and (ii) model selection picks a signiﬁcantly more effective model than expectation (i.e. average) –without using any labels– among candidates with otherwise large variation in performance.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="zhao2021GNNAsKernel">
+  
+    <span class="title">From Stars to Subgraphs: Uplifting Any GNN with Local Structure Awareness</span>
+    <span class="author">
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Wei Jin,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Leman Akoglu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Neil Shah
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>ICLR</em>
+    
+    
+      2022
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/pdf/2110.03753.pdf" target="_blank">PDF</a>]
+  
+  
+  
+    [<a href="/assets/pdf/22-GNNAsKernel_Poster.pdf" target="_blank">Poster</a>]
+  
+  
+    [<a href="/assets/pdf/22-ICLR-GNN-AK.pdf" target="_blank">Slides</a>]
+  
+  
+    [<a href="https://github.com/GNNAsKernel/GNNAsKernel" target="_blank">Code</a>]
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Message Passing Neural Networks (MPNNs) are a common type of Graph Neural
+            Network (GNN), in which each node’s representation is computed recursively by
+            aggregating representations (“messages”) from its immediate neighbors akin to a
+            star-shaped pattern. MPNNs are appealing for being efficient and scalable, 
+            however their expressiveness is upper-bounded by the 1st-order Weisfeiler-Lehman
+            isomorphism test (1-WL). In response, prior works propose highly expressive
+            models at the cost of scalability and sometimes generalization performance. Our
+            work stands between these two regimes: we introduce a general framework to
+            uplift any MPNN to be more expressive, with limited scalability overhead and
+            greatly improved practical performance. We achieve this by extending local aggregation in 
+            MPNNs from star patterns to general subgraph patterns (e.g., k-egonets):
+            in our framework, each node representation is computed as the encoding of a surrounding induced subgraph 
+            rather than encoding of immediate neighbors only (i.e.
+            a star). We choose the subgraph encoder to be a GNN (mainly MPNNs, considering scalability) to 
+            design a general framework that serves as a wrapper to uplift any GNN. We call our proposed method GNN-AK (GNN As Kernel), as the
+            framework resembles a convolutional neural network by replacing the kernel with
+            GNNs. Theoretically, we show that our framework is strictly more powerful than
+            1&amp;2-WL, and is not less powerful than 3-WL. We also design subgraph sampling
+            strategies which greatly reduce memory footprint and improve speed while maintaining performance. 
+            Our method sets new state-of-the-art performance by large
+            margins for several well-known graph ML tasks; specifically, 0.08 MAE on ZINC,
+            74.79% and 86.887% accuracy on CIFAR10 and PATTERN respectively.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="wei2021condensation">
+  
+    <span class="title">Graph Condensation for Graph Neural Networks</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Wei Jin,
+              
+            
+          
+        
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Shichang Zhang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Yozen Liu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Jiliang Tang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Neil Shah
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>ICLR</em>
+    
+    
+      2022
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://chandlerbang.github.io/files/GCond.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/ChandlerBang/GCond" target="_blank">Code</a>]
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Given the prevalence of large-scale graphs in real-world applications, the storage and time for training neural models have raised increasing concerns. 
+  To alleviate the concerns, we propose and study the problem of graph condensation for graph neural networks (GNNs). 
+  Specifically, we aim to condense the large, original graph into a small, synthetic and highly-informative graph, such that GNNs
+  trained on the small graph and large graph have comparable performance. We approach the condensation problem by imitating the GNN training trajectory on the
+  original graph through the optimization of a gradient matching loss and design a strategy to condense node futures and structural information simultaneously. 
+  Extensive experiments have demonstrated the effectiveness of the proposed framework in condensing different graph datasets into informative smaller graphs. In
+  particular, we are able to approximate the original test accuracy by 95.3% on Reddit, 99.8% on Flickr and 99.0% on Citeseer, while reducing their graph size by
+  more than 99.9%, and the condensed graphs can be used to train various GNN
+  architectures.</p>
+  </span>
+  
+</div>
+</li></ol>
+
+<h3 class="year">2021</h3>
+<ol class="bibliography"><li>
+
+<div id="Sawlani2021DOS">
+  
+    <span class="title">Fast Attributed Graph Embedding via Density of States</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Saurabh Sawlani,
+              
+            
+          
+        
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>IEEE ICDM 2021</em>
+    
+    
+      2021
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/pdf/2110.05228.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/sawlani/A-DOGE" target="_blank">Code</a>]
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Given a node-attributed graph, how can we efficiently represent it with few numerical features that expressively
+            reflect its topology and attribute information? We propose A-DOGE, for Attributed DOS-based Graph Embedding, based on
+            density of states (DOS, a.k.a. spectral density) to tackle this
+            problem. A-DOGE is designed to fulfill a long desiderata of
+            desirable characteristics. Most notably, it capitalizes on efficient
+            approximation algorithms for DOS, that we extend to blend in
+            node labels and attributes for the first time, making it fast and
+            scalable for large attributed graphs and graph databases. Being
+            based on the entire eigenspectrum of a graph, A-DOGE can
+            capture structural and attribute properties at multiple (“glocal”)
+            scales. Moreover, it is unsupervised (i.e. agnostic to any specific
+            objective) and lends itself to various interpretations, which makes
+            it is suitable for exploratory graph mining tasks. Finally, it pro-
+            cesses each graph independent of others, making it amenable for
+            streaming settings as well as parallelization. Through extensive
+            experiments, we show the efficacy and efficiency of A-DOGE on
+            exploratory graph analysis and graph classification tasks, where
+            it significantly outperforms unsupervised baselines and achieves
+            competitive performance with modern supervised GNNs, while
+            achieving the best trade-off between accuracy and runtime.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="zhao2021gpca">
+  
+    <span class="title">Connecting Graph Convolutional Network and Graph-Regularized PCA (Extended)</span>
+    <span class="author">
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>Under review</em>
+    
+    
+      2021
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/pdf/2006.12294.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/LingxiaoShawn/GPCANet" target="_blank">Code</a>]
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Graph convolution operator of the GCN model is originally motivated from a localized ﬁrst-order approximation of spectral graph convolutions. 
+            This work stands on a different view; establishing a mathematical connection between graph convolution and graph-regularized PCA (GPCA). 
+            Based on this connection, GCN architecture, shaped by stacking graph convolution layers, shares a close relationship with stacking GPCA. 
+            We empirically demonstrate that the unsupervised embeddings by GPCA paired with a 1- or 2-layer MLP achieves similar or even better performance 
+            than GCN on semi-supervised node classiﬁcation tasks across ﬁve datasets including Open Graph Benchmark 1. 
+            This suggests that the prowess of GCN is driven by graph based regularization. 
+            In addition, we extend GPCA to the (semi-)supervised setting and show that it is equivalent to GPCA on a graph extended with “ghost” edges 
+            between nodes of the same label. Finally, we capitalize on the discovered relationship to design an effective initialization strategy based on stacking GPCA, 
+            enabling GCN to converge faster and achieve robust performance at large number of layers. Notably, the proposed initialization is general-purpose and applies to other GNNs.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="zhao2021issue">
+  
+    <span class="title">On Using Classification Datasets to Evaluate Graph Outlier Detection: Peculiar Observations and New Insights</span>
+    <span class="author">
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>Big Data Journal, Special Issue on Evaluation and Experimental Design in Data Mining and Machine Learning, Aug. 2021</em>
+    
+    
+      2021
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/pdf/2012.12931.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/LingxiaoShawn/GLOD-Issues" target="_blank">Code</a>]
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>It is common practice of the outlier mining community to repurpose classification datasets toward evaluating
+            various detection models. To that end, often a binary classification dataset is used, where samples from
+            one of the classes is designated as the ‘inlier’ samples, and the other class is substantially down-sampled
+            to create the (ground-truth) ‘outlier’ samples. Graph-level outlier detection (GLOD) is rarely studied but
+            has many potentially influential real-world applications. In this study, we identify an intriguing issue with
+            repurposing graph classification datasets for GLOD. We find that ROC-AUC performance of the models
+            changes significantly (“flips” from high to very low, even worse than random) depending on which class is
+            down-sampled. Interestingly, ROC-AUCs on these two variants approximately sum to 1 and their performance
+            gap is amplified with increasing propagations for a certain family of propagation based outlier detection
+            models. We carefully study the graph embedding space produced by propagation based models and find
+            two driving factors: (1) disparity between within-class densities which is amplified by propagation, and (2)
+            overlapping support (mixing of embeddings) across classes. We also study other graph embedding methods and
+            downstream outlier detectors, and find that the intriguing “performance flip” issue still widely exists but which
+            version of the downsample achieves higher performance may vary. Thoughtful analysis over comprehensive
+            results further deeper our understanding of the established issue.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="chen2020graph">
+  
+    <span class="title">Graph Unrolling Networks: Interpretable Neural Networks for Graph Signal Denoising</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Siheng Chen,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Yonina C Eldar,
+              
+            
+          
+        
+      
+        
+          
+            
+              and <em>Lingxiao Zhao</em>
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>IEEE Transactions on Signal Processing</em>
+    
+    
+      2021
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/pdf/2006.01301.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>We propose an interpretable graph neural network framework to denoise single or multiple noisy graph signals. The proposed graph unrolling networks expand algorithm unrolling to the graph domain and provide an interpretation of the architecture design from a signal processing perspective. We unroll an iterative denoising algorithm by mapping each iteration into a single network layer where the feed-forward process is equivalent to iteratively denoising graph signals. We train the graph unrolling networks through unsupervised learning, where the input noisy graph signals are used to supervise the networks. By leveraging the learning ability of neural networks, we adaptively capture appropriate priors from input noisy graph signals, instead of manually choosing signal priors. A core component of graph unrolling networks is the edge-weight-sharing graph convolution operation, which parameterizes each edge weight by a trainable kernel function where the trainable parameters are shared by all the edges. The proposed convolution is permutation-equivariant and can flexibly adjust the edge weights to various graph signals. We then consider two special cases of this class of networks, graph unrolling sparse coding (GUSC) and graph unrolling trend filtering (GUTF), by unrolling sparse coding and trend filtering, respectively. To validate the proposed methods, we conduct extensive experiments on both real-world datasets and simulated datasets, and demonstrate that our methods have smaller denoising errors than conventional denoising algorithms and state-of-the-art graph neural networks. For denoising a single smooth graph signal, the normalized mean square error of the proposed networks is around 40% and 60% lower than that of graph Laplacian denoising and graph wavelets, respectively.</p>
+  </span>
+  
+</div>
+</li></ol>
+
+<h3 class="year">2020</h3>
+<ol class="bibliography"><li>
+
+<div id="zhao2019pairnorm">
+  
+    <span class="title">PairNorm: Tackling Oversmoothing in GNNs</span>
+    <span class="author">
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>ICLR 2020, Addis Ababa, Ethiopia</em>
+    
+    
+      2020
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://openreview.net/pdf?id=rkecl1rtwB" target="_blank">PDF</a>]
+  
+  
+  
+  
+    [<a href="/assets/pdf/20-ICLR-PairNorm.pdf" target="_blank">Slides</a>]
+  
+  
+    [<a href="https://github.com/LingxiaoShawn/PairNorm" target="_blank">Code</a>]
+  
+  
+    [<a href="https://iclr.cc/virtual_2020/poster_rkecl1rtwB.html" target="_blank">Video</a>]
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>The performance of graph neural nets (GNNs) is known to gradually decrease
+            with increasing number of layers. This decay is partly attributed to oversmoothing, where repeated graph convolutions eventually make node embeddings indistinguishable. We take a closer look at two different interpretations, aiming to
+            quantify oversmoothing. Our main contribution is PAIRNORM, a novel normalization layer that is based on a careful analysis of the graph convolution operator,
+            which prevents all node embeddings from becoming too similar. What is more,
+            PAIRNORM is fast, easy to implement without any change to network architecture
+            nor any additional parameters, and is broadly applicable to any GNN. Experiments
+            on real-world graphs demonstrate that PAIRNORM makes deeper GCN, GAT, and
+            SGC models more robust against oversmoothing, and significantly boosts performance for a new problem setting that benefits from deeper GNNs.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="zhao2020gpca">
+  
+    <span class="title">Connecting Graph Convolutional Network and Graph-Regularized PCA</span>
+    <span class="author">
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>ICML 2020 GRLP Workshop</em>
+    
+    
+      2020
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/pdf/2006.12294.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/LingxiaoShawn/GPCANet" target="_blank">Code</a>]
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Graph convolution operator of the GCN model is originally motivated from a localized first-order approximation of spectral graph convolutions.This work stands on a different view; establishing a connection between graph convolution and graph-regularized PCA. Based on this connection, GCN architecture, shaped by stacking graph convolution layers, shares a close relationship with stacking graph-regularized PCA (GPCA). We empirically demonstrate that the unsupervised embeddings by GPCA paired with a logistic regression classifier achieves similar performance to GCN on semi-supervised node classification tasks. Further, we capitalize on the discovered relationship to design an effective initialization strategy for GCN based on stacking GPCA.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="zhu2020homophily">
+  
+    <span class="title">Generalizing Graph Neural Networks Beyond Homophily</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Jiong Zhu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Yujun Yan,
+              
+            
+          
+        
+      
+        
+          
+            
+              <em>Lingxiao Zhao</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Mark Heimann,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Leman Akoglu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Danai Koutra
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>NeurIPS</em>
+    
+    
+      2020
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2006.11468.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/GemsLab/H2GCN" target="_blank">Code</a>]
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>We investigate the representation power of graph neural networks in the semi-supervised node classification task under heterophily or low homophily, i.e., in networks where connected nodes may have different class labels and dissimilar features. Most existing GNNs fail to generalize to this setting, and are even outperformed by models that ignore the graph structure (e.g., multilayer perceptrons). Motivated by this limitation, we identify a set of key designs – ego- and neighbor-embedding separation, higher-order neighborhoods, and combination of intermediate representations – that boost learning from the graph structure under heterophily, and combine them into a new graph convolutional neural network, H2GCN. Going beyond the traditional benchmarks with strong homophily, our empirical analysis on synthetic and real networks shows that, thanks to the identified designs, H2GCN has consistently strong performance across the full spectrum of low-to-high homophily, unlike competitive prior models without them.</p>
+  </span>
+  
+</div>
+</li></ol>
+
+<h3 class="year">2018</h3>
+<ol class="bibliography"><li>
+
+<div id="wu2018quest">
+  
+    <span class="title">A Quest for Structure: Jointly Learning the Graph Structure and Semi-Supervised Classification</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Xuan Wu*,
+              
+            
+          
+        
+      
+        
+          
+            
+              <em>Lingxiao Zhao*</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                and Leman Akoglu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proceedings of the 27th ACM International Conference on Information and Knowledge Management</em>
+    
+    
+      2018
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abs</a>]
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/pdf/1909.12385.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+    [<a href="/assets/pdf/18-cikm-graph_SSL.pdf" target="_blank">Slides</a>]
+  
+  
+    [<a href="https://github.com/LingxiaoShawn/PG-Learn" target="_blank">Code</a>]
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>How should one construct a graph from the input point-cloud
+            data for graph-based SSL? In this work we introduce a new, parallel graph learning framework (called PG-learn) for the graph
+            construction step of SSL. Our solution has two main ingredients:
+            (1) a gradient-based optimization of the edge weights (more specifically, different kernel bandwidths in each dimension) based on a
+            validation loss function, and (2) a parallel hyperparameter search algorithm with an adaptive resource allocation scheme. In essence, (1)
+            allows us to search around a (random) initial hyperparameter configuration for a better one with lower validation loss. Since the search
+            space of hyperparameters is huge for high-dimensional problems,
+            (2) empowers our gradient-based search to go through as many
+            different initial configurations as possible, where runs for relatively
+            unpromising starting configurations are terminated early to allocate the time for others. As such, PG-learn is a carefully-designed
+            hybrid of random and adaptive search. Through experiments on
+            multi-class classification problems, we show that PG-learn significantly outperforms a variety of existing graph construction
+            schemes in accuracy (per fixed time budget for hyperparameter
+            tuning), and scales more effectively to high dimensional problems.</p>
+  </span>
+  
+</div>
+</li></ol>
+
+
+  </article>
+
+  
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    
+<!-- Begin Web-Stat code v 6.3 -->
+<span id="wts1908377">&nbsp;</span><script>
+var wts=document.createElement('script');wts.type='text/javascript';
+wts.async=true;wts.src='https://wts.one/3/1908377/log6_2.js';
+document.getElementById('wts1908377').appendChild(wts);
+</script><noscript><a href="https://www.web-stat.com">
+<img src="https://wts.one/6/3/1908377.gif" 
+alt="Web-Stat analytics"></a></noscript>
+<!-- End Web-Stat code v 6.3 -->
+
+<footer>
+  <div class="wrapper">
+    &copy; Copyright 2024 Lingxiao Zhao.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+
+    
+  </div>
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-XXXXXXXXX', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>
